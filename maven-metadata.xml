@@ -1,0 +1,14 @@
+<metadata>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+  <version>1.5.10.RELEASE</version>
+
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-actuator</artifactId>
+  <version>1.5.10.RELEASE</version>
+
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-test</artifactId>
+  <version>1.5.10.RELEASE</version>
+  
+</metadata>
