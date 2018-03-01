@@ -32,6 +32,10 @@
             <scope>test</scope>
         </dependency>
         <!-- end::tests[] -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>            
+        </dependency>
     </dependencies>
 
     <properties>
