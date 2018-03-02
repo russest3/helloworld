@@ -45,14 +45,14 @@
     <repositories>
         <repository>
             <id>mySnapshots</id>            
-            <url>http://10.10.63.156:8081/ext-snapshot-local</url>
+            <url>http://10.0.1.11:8081/ext-snapshot-local</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
         </repository>
         <repository>
             <id>myReleases</id>            
-            <url>http://10.10.63.156:8081/ext-release-local</url>
+            <url>http://10.0.1.11:8081/ext-release-local</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
