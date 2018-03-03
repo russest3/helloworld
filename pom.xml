@@ -18,17 +18,20 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>1.5.10.RELEASE</version>
         </dependency>
         <!-- tag::actuator[] -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>1.5.10.RELEASE</version>
         </dependency>
         <!-- end::actuator[] -->
         <!-- tag::tests[] -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>1.5.10.RELEASE</version>
             <scope>test</scope>
         </dependency>
         <!-- end::tests[] -->        
@@ -71,6 +74,7 @@
                     <dependency>
                         <groupId>org.springframework</groupId>
                         <artifactId>springloaded</artifactId>
+                        <version>1.5.10.RELEASE</version>
                     </dependency>
                 </dependencies>
             </plugin>
