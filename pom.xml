@@ -8,6 +8,12 @@
     <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+     <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.10.RELEASE</version>
+    </parent>
+
      <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -39,14 +45,14 @@
     <repositories>
         <repository>
             <id>mySnapshots</id>            
-            <url>http://10.0.1.11:8081/snapshots</url>
+            <url>http://10.0.1.11:8081/artifactory/snapshots</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
         </repository>
         <repository>
             <id>myReleases</id>            
-            <url>http://10.0.1.11:8081/releases</url>
+            <url>http://10.0.1.11:8081/artifactory/releases</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
