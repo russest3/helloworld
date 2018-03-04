@@ -8,6 +8,29 @@
     <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>1.5.10.RELEASE</version>
+        </dependency>
+        <!-- tag::actuator[] -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>1.5.10.RELEASE</version>
+        </dependency>
+        <!-- end::actuator[] -->
+        <!-- tag::tests[] -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>1.5.10.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- end::tests[] -->        
+    </dependencies>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
