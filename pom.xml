@@ -34,7 +34,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>snapshots</id>
-            <url>http://10.0.1.20:8081/artifactory/snapshots</url>
+            <url>http://10.10.0.9:9398/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
