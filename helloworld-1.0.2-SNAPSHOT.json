@@ -1,0 +1,57 @@
+{
+  "id": "/helloworld",
+  "constraints": [
+    [
+      "hostname",
+      "IS",
+      "10.10.0.7"
+    ]
+  ],
+  "acceptedResourceRoles": ["slave_public"],
+  "container": {
+    "portMappings": [
+      {
+        "containerPort": 8081,
+        "hostPort": 5058,
+        "protocol": "tcp",
+        "servicePort": 10003
+      }
+    ],
+    "type": "DOCKER",
+    "volumes": [
+      {
+        "containerPath": "/app",
+        "hostPath": "/app",
+        "mode": "RW"
+      }
+    ],
+    "docker": {
+      "image": "russest3/helloworld:1.0.2-SNAPSHOT",
+      "forcePullImage": true,
+      "privileged": false,
+      "parameters": []
+    }
+  },
+  "cpus": 0.5,
+  "disk": 0,
+  "instances": 1,
+  "maxLaunchDelaySeconds": 3600,
+  "mem": 512,
+  "gpus": 0,
+  "networks": [
+    {
+      "mode": "container/bridge"
+    }
+  ],
+  "requirePorts": false,
+  "upgradeStrategy": {
+    "maximumOverCapacity": 1,
+    "minimumHealthCapacity": 1
+  },
+  "killSelection": "YOUNGEST_FIRST",
+  "unreachableStrategy": {
+    "inactiveAfterSeconds": 0,
+    "expungeAfterSeconds": 0
+  },
+  "healthChecks": []
+}
