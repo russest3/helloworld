@@ -4,7 +4,7 @@ EXPOSE 9990
 EXPOSE 8081
 USER root
 RUN mkdir /app
-RUN mkdir /app/$JOB_NAME-$VERSION
+RUN mkdir /app/$POM_ARTIFACTID-$POM_VERSION
 COPY src/main/resources/application.properties /app/$POM_ARTIFACTID-$POM_VERSION/
 COPY target/$POM_ARTIFACTID-$POM_VERSION.jar /app/$POM_ARTIFACTID-$POM_VERSION/
 RUN chown -R jboss: /app
