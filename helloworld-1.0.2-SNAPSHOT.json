@@ -17,7 +17,7 @@
         "servicePort": 10003
       }
     ],
-    "type": "DOCKER",
+    "type": "MESOS",
     "volumes": [
       {
         "containerPath": "/app",

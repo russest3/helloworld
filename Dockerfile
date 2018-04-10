@@ -9,8 +9,8 @@ ENV POM_VERSION=${POM_VERSION}
 USER root
 VOLUME /app
 RUN mkdir /app/$POM_ARTIFACTID-$POM_VERSION
-ADD src/main/resources/application.properties /app/$POM_ARTIFACTID-$POM_VERSION/
-ADD target/$POM_ARTIFACTID-$POM_VERSION.jar /app/$POM_ARTIFACTID-$POM_VERSION/
+COPY src/main/resources/application.properties /app/$POM_ARTIFACTID-$POM_VERSION/
+COPY target/$POM_ARTIFACTID-$POM_VERSION.jar /app/$POM_ARTIFACTID-$POM_VERSION/
 RUN chown -R jboss: /app
 USER jboss
 ENTRYPOINT java -Dapplication.properties=/app/$POM_ARTIFACTID-$POM_VERSION/application.properties /app/$POM_ARTIFACTID-$POM_VERSION/$POM_ARTIFACTID-$POM_VERSION.jar
