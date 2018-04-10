@@ -13,4 +13,4 @@ COPY src/main/resources/application.properties /app/$POM_ARTIFACTID-$POM_VERSION
 COPY target/$POM_ARTIFACTID-$POM_VERSION.jar /app/$POM_ARTIFACTID-$POM_VERSION/
 RUN chown -R jboss: /app
 USER jboss
-ENTRYPOINT java -Dapplication.properties=/app/$POM_ARTIFACTID-$POM_VERSION/application.properties /app/$POM_ARTIFACTID-$POM_VERSION/$POM_ARTIFACTID-$POM_VERSION.jar
+ENTRYPOINT java -Dapplication.properties=/app/$POM_ARTIFACTID-$POM_VERSION/application.properties -jar /app/$POM_ARTIFACTID-$POM_VERSION/$POM_ARTIFACTID-$POM_VERSION.jar
