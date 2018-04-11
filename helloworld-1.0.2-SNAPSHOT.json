@@ -10,6 +10,12 @@
         "servicePort": 10003
       }
     ],
+    "constraints": [
+    [
+      "hostname",
+      "UNIQUE"
+    ]
+  ],
     "type": "MESOS",
     "volumes": [
       {
