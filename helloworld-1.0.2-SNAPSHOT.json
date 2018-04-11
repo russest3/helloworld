@@ -7,7 +7,6 @@
       "10.10.0.7"
     ]
   ],
-  "cmd": "java -Dapplication.properties=application.properties -jar helloworld-1.0.2-20180410.200505-37.jar",
   "acceptedResourceRoles": ["slave_public"],
   "container": {
     "portMappings": [
