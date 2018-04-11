@@ -1,12 +1,5 @@
 {
-  "id": "/helloworld2",
-  "constraints": [
-    [
-      "hostname",
-      "IS",
-      "10.10.0.7"
-    ]
-  ],
+  "id": "/helloworld2",  
   "acceptedResourceRoles": ["slave_public"],
   "container": {
     "portMappings": [
